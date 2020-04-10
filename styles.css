@@ -5,7 +5,8 @@ body {
     color: #ffffff;
     font-size: 14px;
     font-family: "Inter";
-    margin: 0 0 5%;
+    margin: 0;
+    font-weight: 700;
 }
 
 body.light {
@@ -19,13 +20,22 @@ body.light {
     justify-content: center;
 }
 
+.row-stretch {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid {
+
+}
+
 .small-text {
-    color: #63687e;
-    font-weight: 700;
+    color: #8b97c6;
+    
 }
 
 .light .small-text {
-    color: #8b97c6;
+    color: #63687e;
 }
 
 
@@ -33,10 +43,7 @@ body.light {
 
 #header {
     background-color: #1f212e;
-    padding: 3% 10% 12%;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
+    padding: 2.5% 10% 12%;
 }
 
 .light #header {
@@ -44,7 +51,7 @@ body.light {
 }
 
 .main-heading {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 0.2;
 }
 
@@ -154,7 +161,6 @@ background-repeat: no-repeat;
 
 .followers-count {
     font-size: 3.5rem;
-    font-weight: 700;
     line-height: 0;
     margin-top: 50px;
 }
@@ -163,11 +169,53 @@ background-repeat: no-repeat;
     line-height: 0;
     letter-spacing: 5px;
     margin-bottom: 40px;
+    font-size: 13px;
+}
+
+.change {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.change-up {
+    color: #1db489;
+}
+
+.change-down {
+    color: #dc414c;
 }
 
 
 /* OVERVIEW SECTION */
 
-#overview {
-    margin-top: 20%;
+.overview-heading {
+    font-size: 1.5rem;
+    margin: 13% 10% 2.5%;
+} 
+
+.light .overview-heading {
+    color: #63687e;
+}
+
+.overview-grid {
+    padding: 0 9%;
+    margin-bottom: 1%;
+}
+
+.card-overview {
+    padding: 2% 2.5% 1%;
+}
+
+.overview-count-row {
+    margin-top: 10%;
+}
+
+.overview-count {
+    font-size: 2rem;
+    line-height: 0;
+    align-self: flex-end;
+}
+
+.overview-card {
+    align-self: flex-end;
 }
