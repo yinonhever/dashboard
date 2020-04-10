@@ -1,0 +1,173 @@
+/* GENERAL */
+
+body {
+    background-color: #1e202a;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: "Inter";
+    margin: 0 0 5%;
+}
+
+body.light {
+    background-color: #ffffff;
+    color: #1e202a;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.small-text {
+    color: #63687e;
+    font-weight: 700;
+}
+
+.light .small-text {
+    color: #8b97c6;
+}
+
+
+/* HEADER SECTION */
+
+#header {
+    background-color: #1f212e;
+    padding: 3% 10% 12%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.light #header {
+    background-color: #f5f7ff;
+}
+
+.main-heading {
+    font-size: 1.5rem;
+    line-height: 0.2;
+}
+
+
+/* TEHEME SWITCHER */ 
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 26px;
+    margin-left: 20px;
+}
+  
+#toggler {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right, #378fe6, #00a9f0, #00bfde, #00cfb6, #3eda82);
+    border-radius: 34px;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #1e202a;
+    border-radius: 34px;
+    transition: .4s;
+}
+  
+#toggler:checked + .slider {
+    background: #aeb3cb;
+}
+
+#toggler:checked + .slider:before {
+    transform: translateX(26px);
+    background-color: #ffffff;
+}
+
+
+/* CARDS */
+
+.card {
+    text-align: center;
+    margin: 0 1%;
+    background-color: #252a41;
+    border-radius: 5px;
+    border: none;
+    width: 25%;
+    padding: 3% 0;
+}
+
+.light .card {
+    background-color: #f0f2fa;
+}
+
+
+/* TOP GRID */
+
+#top-grid {
+    position: absolute;
+    top: 22%;
+    left: 9%;
+    right: 9%;
+    margin-bottom: 10%;
+}
+
+.facebook {
+    border-top: 3px solid #00bfff;
+}
+
+.twitter {
+    border-top: 3px solid #1ca0f2;
+}
+
+.instagram {
+    background-size: 3px 100%;
+    background-position: 100% 0;
+
+background-repeat: no-repeat;
+
+    background-image: linear-gradient(to right, #fdc468, #ffa263, #ff806c, #f9607f, #df4996);
+
+}
+
+.youtube {
+    border-top: 3px solid #c4032a;
+}
+
+.username {
+    margin-left: 8px;
+    font-size: 13px;
+}
+
+.followers-count {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 0;
+    margin-top: 50px;
+}
+
+.followers {
+    line-height: 0;
+    letter-spacing: 5px;
+    margin-bottom: 40px;
+}
+
+
+/* OVERVIEW SECTION */
+
+#overview {
+    margin-top: 20%;
+}
