@@ -5,8 +5,8 @@ body {
     color: #ffffff;
     font-size: 14px;
     font-family: "Inter";
-    margin: 0;
     font-weight: 700;
+    margin: 0 0 6%;
 }
 
 body.light {
@@ -25,9 +25,8 @@ body.light {
     justify-content: space-between;
 }
 
-.grid {
 
-}
+/* TEXT TYPES */
 
 .small-text {
     color: #8b97c6;
@@ -36,6 +35,19 @@ body.light {
 
 .light .small-text {
     color: #63687e;
+}
+
+.change {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.change-up {
+    color: #1db489;
+}
+
+.change-down {
+    color: #dc414c;
 }
 
 
@@ -104,6 +116,15 @@ body.light {
     background-color: #ffffff;
 }
 
+.slider:hover {
+    filter: brightness(150%);
+}
+
+#toggler:checked + .slider:hover {
+    background: linear-gradient(to right, #378fe6, #00a9f0, #00bfde, #00cfb6, #3eda82);
+    filter: none;
+}
+
 
 /* CARDS */
 
@@ -115,10 +136,19 @@ body.light {
     border: none;
     width: 25%;
     padding: 3% 0;
+    cursor: pointer;
+}
+
+.card:hover {
+    filter: brightness(130%);
 }
 
 .light .card {
     background-color: #f0f2fa;
+}
+
+.light .card:hover {
+    filter: brightness(90%);
 }
 
 
@@ -133,25 +163,21 @@ body.light {
 }
 
 .facebook {
-    border-top: 3px solid #00bfff;
+    border-top: 4px solid #00bfff;
 }
 
 .twitter {
-    border-top: 3px solid #1ca0f2;
+    border-top: 4px solid #1ca0f2;
 }
 
 .instagram {
-    background-size: 3px 100%;
-    background-position: 100% 0;
-
-background-repeat: no-repeat;
-
-    background-image: linear-gradient(to right, #fdc468, #ffa263, #ff806c, #f9607f, #df4996);
-
+    background: linear-gradient(to right, #fdc468, #ffa263, #ff806c, #f9607f, #df4996)
+    top/100% 4px no-repeat,
+    #252a41;
 }
 
 .youtube {
-    border-top: 3px solid #c4032a;
+    border-top: 4px solid #c4032a;
 }
 
 .username {
@@ -172,19 +198,6 @@ background-repeat: no-repeat;
     font-size: 13px;
 }
 
-.change {
-    font-size: 12px;
-    margin-left: 5px;
-}
-
-.change-up {
-    color: #1db489;
-}
-
-.change-down {
-    color: #dc414c;
-}
-
 
 /* OVERVIEW SECTION */
 
@@ -199,23 +212,23 @@ background-repeat: no-repeat;
 
 .overview-grid {
     padding: 0 9%;
-    margin-bottom: 1%;
+    margin-bottom: 1.5%;
 }
 
 .card-overview {
-    padding: 2% 2.5% 1%;
+    padding: 2.5% 2.5% 1%;
 }
 
 .overview-count-row {
     margin-top: 10%;
+
 }
 
 .overview-count {
-    font-size: 2rem;
+    font-size: 1.9rem;
     line-height: 0;
-    align-self: flex-end;
 }
 
-.overview-card {
-    align-self: flex-end;
+@media all and (max-width: 600px) {
+
 }
