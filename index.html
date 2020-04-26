@@ -25,7 +25,9 @@
         <h1 class="main-heading">Social Media Dashboard</h1>
         <span class="small-text">Total Followers: 23,004</span>
       </div>
-
+      
+      <hr class="seperator" />
+      
       <div class="row">
         <span class="small-text">Dark Mode</span>
         <label class="switch">
@@ -35,7 +37,7 @@
       </div>
     </section>
 
-    <section class="row" id="top-grid">
+    <section class="grid" id="top-grid">
       <div class="card facebook">
         <div class="row">
           <img src="images/icon-facebook.svg" alt="twitter icon" />
@@ -89,9 +91,10 @@
       </div>
     </section>
 
+    <section id="overview-section">
     <h2 class="overview-heading">Overview - Today</h2>
 
-    <div class="row overview-grid">
+    <div class="grid">
 
       <div class="card card-overview">
         <div class="row-stretch">
@@ -100,7 +103,7 @@
         </div>
         <div class="row-stretch overview-count-row">
           <h2 class="overview-count">87</h2>
-          <div class="row overview-change">
+          <div class="row ">
             <img src="images/icon-up.svg" alt="icon up">
             <span class="change change-up">3%</span>
           </div>
@@ -114,9 +117,9 @@
         </div>
         <div class="row-stretch overview-count-row">
           <h2 class="overview-count">52</h2>
-          <div class="row overview-change">
-            <img src="images/icon-up.svg" alt="icon up">
-            <span class="change change-up">2%</span>
+          <div class="row ">
+            <img src="images/icon-down.svg" alt="icon up">
+            <span class="change change-down">2%</span>
           </div>
         </div>
       </div>
@@ -128,7 +131,7 @@
         </div>
         <div class="row-stretch overview-count-row">
           <h2 class="overview-count">5462</h2>
-          <div class="row overview-change">
+          <div class="row ">
             <img src="images/icon-up.svg" alt="icon up">
             <span class="change change-up">2257%</span>
           </div>
@@ -142,15 +145,13 @@
         </div>
         <div class="row-stretch overview-count-row">
           <h2 class="overview-count">52k</h2>
-          <div class="row overview-change">
+          <div class="row ">
             <img src="images/icon-up.svg" alt="icon up">
             <span class="change change-up">1375%</span>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="row overview-grid">
       <div class="card card-overview">
         <div class="row-stretch">
           <span class="small-text">Retweets</span>
@@ -158,7 +159,7 @@
         </div>
         <div class="row-stretch overview-count-row">
           <h2 class="overview-count">117</h2>
-          <div class="row overview-change">
+          <div class="row ">
             <img src="images/icon-up.svg" alt="icon up">
             <span class="change change-up">303%</span>
           </div>
@@ -172,7 +173,7 @@
         </div>
         <div class="row-stretch overview-count-row">
           <h2 class="overview-count">507</h2>
-          <div class="row overview-change">
+          <div class="row ">
             <img src="images/icon-up.svg" alt="icon up">
             <span class="change change-up">553%</span>
           </div>
@@ -186,9 +187,9 @@
         </div>
         <div class="row-stretch overview-count-row">
           <h2 class="overview-count">107</h2>
-          <div class="row overview-change">
-            <img src="images/icon-up.svg" alt="icon up">
-            <span class="change change-up">19%</span>
+          <div class="row ">
+            <img src="images/icon-down.svg" alt="icon up">
+            <span class="change change-down">19%</span>
           </div>
         </div>
       </div>
@@ -200,14 +201,15 @@
         </div>
         <div class="row-stretch overview-count-row">
           <h2 class="overview-count">1407</h2>
-          <div class="row overview-change">
-            <img src="images/icon-up.svg" alt="icon up">
-            <span class="change change-up">12%</span>
+          <div class="row ">
+            <img src="images/icon-down.svg" alt="icon up">
+            <span class="change change-down">12%</span>
           </div>
         </div>
       </div>
 
     </div>
+    </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>

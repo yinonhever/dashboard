@@ -25,6 +25,11 @@ body.light {
     justify-content: space-between;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
 
 /* TEXT TYPES */
 
@@ -65,6 +70,10 @@ body.light {
 .main-heading {
     font-size: 1.6rem;
     line-height: 0.2;
+}
+
+.seperator {
+  display: none;
 }
 
 
@@ -116,13 +125,15 @@ body.light {
     background-color: #ffffff;
 }
 
-.slider:hover {
+@media all (min-width: 1000px) {
+  .slider:hover {
     filter: brightness(150%);
-}
+  }
 
-#toggler:checked + .slider:hover {
+  #toggler:checked + .slider:hover {
     background: linear-gradient(to right, #378fe6, #00a9f0, #00bfde, #00cfb6, #3eda82);
     filter: none;
+  }
 }
 
 
@@ -130,11 +141,10 @@ body.light {
 
 .card {
     text-align: center;
-    margin: 0 1%;
+    margin: 1%;
     background-color: #252a41;
     border-radius: 5px;
     border: none;
-    width: 25%;
     padding: 3% 0;
     cursor: pointer;
 }
@@ -159,7 +169,6 @@ body.light {
     top: 22%;
     left: 9%;
     right: 9%;
-    margin-bottom: 10%;
 }
 
 .facebook {
@@ -201,18 +210,18 @@ body.light {
 
 /* OVERVIEW SECTION */
 
+#overview-section {
+  margin: 13% 0 4%;
+  padding: 0 10%;
+}
+
 .overview-heading {
     font-size: 1.5rem;
-    margin: 13% 10% 2.5%;
+    margin-bottom: 3%;
 } 
 
 .light .overview-heading {
     color: #63687e;
-}
-
-.overview-grid {
-    padding: 0 9%;
-    margin-bottom: 1.5%;
 }
 
 .card-overview {
@@ -221,7 +230,6 @@ body.light {
 
 .overview-count-row {
     margin-top: 10%;
-
 }
 
 .overview-count {
@@ -229,6 +237,60 @@ body.light {
     line-height: 0;
 }
 
-@media all and (max-width: 600px) {
 
+/* SMALL SCREENS */
+
+@media all and (max-width: 850px) {
+    #header {
+      display: block;
+      padding: 25px 6% 90px;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+    }
+    
+    .seperator {
+      display: block;
+      height: 0.5px;
+      background-color: #8b97c6;
+      border: none;
+      margin: 25px auto;
+    }
+    
+    .light .seperator {
+      background-color: #1e202a;
+    }
+    
+    #header .row {
+      justify-content: space-between;
+    }
+    
+    #top-grid {
+      top: 190px;
+      left: 2.5%;
+      right: 2.5%;
+    }
+    
+    #overview-section {
+      padding: 0 2.5%;
+      margin-top: 920px;
+    }
+    
+    .overview-heading {
+      padding: 0 3.5% ;
+    }
+    
+    .card {
+      margin: 3.5%;
+      padding: 6% 0;
+    }
+    
+    .card-overview {
+      padding: 6% 6% 3% ;
+    }
+}
+
+@media all and (min-width: 500px) and (max-width: 850px) {
+  #overview-section {
+    margin-top: 450px;
+  }
 }
