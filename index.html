@@ -19,15 +19,16 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <section class="row-stretch" id="header">
       <div>
         <h1 class="main-heading">Social Media Dashboard</h1>
         <span class="small-text">Total Followers: 23,004</span>
       </div>
-      
+
       <hr class="seperator" />
-      
+
       <div class="row">
         <span class="small-text">Dark Mode</span>
         <label class="switch">
@@ -37,178 +38,176 @@
       </div>
     </section>
 
-    <section class="grid" id="top-grid">
-      <div class="card facebook">
-        <div class="row">
-          <img src="images/icon-facebook.svg" alt="twitter icon" />
-          <span class="small-text username">@nathanf</span>
+    <section id="grids-container">
+      <div class="grid">
+        <div class="card facebook">
+          <div class="row">
+            <img src="images/icon-facebook.svg" alt="twitter icon" />
+            <span class="small-text username">@nathanf</span>
+          </div>
+          <h1 class="followers-count">1987</h1>
+          <p class="small-text followers">FOLLOWERS</p>
+          <div class="row">
+            <img src="images/icon-up.svg" alt="icon up" />
+            <span class="change change-up">12 Today</span>
+          </div>
         </div>
-        <h1 class="followers-count">1987</h1>
-        <p class="small-text followers">FOLLOWERS</p>
-        <div class="row">
-          <img src="images/icon-up.svg" alt="icon up" />
-          <span class="change change-up">12 Today</span>
-        </div>
-      </div>
 
-      <div class="card twitter">
-        <div class="row">
-          <img src="images/icon-twitter.svg" alt="twitter icon" />
-          <span class="small-text username">@nathanf</span>
+        <div class="card twitter">
+          <div class="row">
+            <img src="images/icon-twitter.svg" alt="twitter icon" />
+            <span class="small-text username">@nathanf</span>
+          </div>
+          <h1 class="followers-count">1044</h1>
+          <p class="small-text followers">FOLLOWERS</p>
+          <div class="row">
+            <img src="images/icon-up.svg" alt="icon up" />
+            <span class="change change-up">99 Today</span>
+          </div>
         </div>
-        <h1 class="followers-count">1044</h1>
-        <p class="small-text followers">FOLLOWERS</p>
-        <div class="row">
-          <img src="images/icon-up.svg" alt="icon up" />
-          <span class="change change-up">99 Today</span>
-        </div>
-      </div>
 
-      <div class="card instagram">
-        <div class="row">
-          <img src="images/icon-instagram.svg" alt="instagram icon" />
-          <span class="small-text username">@realnathanf</span>
+        <div class="card instagram">
+          <div class="row">
+            <img src="images/icon-instagram.svg" alt="instagram icon" />
+            <span class="small-text username">@realnathanf</span>
+          </div>
+          <h1 class="followers-count">11k</h1>
+          <p class="small-text followers">FOLLOWERS</p>
+          <div class="row">
+            <img src="images/icon-up.svg" alt="icon up" />
+            <span class="change change-up">1099 Today</span>
+          </div>
         </div>
-        <h1 class="followers-count">11k</h1>
-        <p class="small-text followers">FOLLOWERS</p>
-        <div class="row">
-          <img src="images/icon-up.svg" alt="icon up" />
-          <span class="change change-up">1099 Today</span>
-        </div>
-      </div>
 
-      <div class="card youtube">
-        <div class="row">
-          <img src="images/icon-youtube.svg" alt="twitter icon" />
-          <span class="small-text username">Nathan F.</span>
-        </div>
-        <h1 class="followers-count">8239</h1>
-        <p class="small-text followers">SUBSCRIBERS</p>
-        <div class="row">
-          <img src="images/icon-down.svg" alt="icon down" />
-          <span class="change change-down">144 Today</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="overview-section">
-    <h2 class="overview-heading">Overview - Today</h2>
-
-    <div class="grid">
-
-      <div class="card card-overview">
-        <div class="row-stretch">
-          <span class="small-text">Page Views</span>
-          <img src="images/icon-facebook.svg" alt="facebook icon" />
-        </div>
-        <div class="row-stretch overview-count-row">
-          <h2 class="overview-count">87</h2>
-          <div class="row ">
-            <img src="images/icon-up.svg" alt="icon up">
-            <span class="change change-up">3%</span>
+        <div class="card youtube">
+          <div class="row">
+            <img src="images/icon-youtube.svg" alt="twitter icon" />
+            <span class="small-text username">Nathan F.</span>
+          </div>
+          <h1 class="followers-count">8239</h1>
+          <p class="small-text followers">SUBSCRIBERS</p>
+          <div class="row">
+            <img src="images/icon-down.svg" alt="icon down" />
+            <span class="change change-down">144 Today</span>
           </div>
         </div>
       </div>
 
-      <div class="card card-overview">
-        <div class="row-stretch">
-          <span class="small-text">Likes</span>
-          <img src="images/icon-facebook.svg" alt="facebook icon">
+      <h2 class="overview-heading">Overview - Today</h2>
+
+      <div class="grid">
+        <div class="card card-overview">
+          <div class="row-stretch">
+            <span class="small-text">Page Views</span>
+            <img src="images/icon-facebook.svg" alt="facebook icon" />
+          </div>
+          <div class="row-stretch overview-count-row">
+            <h2 class="overview-count">87</h2>
+            <div class="row">
+              <img src="images/icon-up.svg" alt="icon up" />
+              <span class="change change-up">3%</span>
+            </div>
+          </div>
         </div>
-        <div class="row-stretch overview-count-row">
-          <h2 class="overview-count">52</h2>
-          <div class="row ">
-            <img src="images/icon-down.svg" alt="icon up">
-            <span class="change change-down">2%</span>
+
+        <div class="card card-overview">
+          <div class="row-stretch">
+            <span class="small-text">Likes</span>
+            <img src="images/icon-facebook.svg" alt="facebook icon" />
+          </div>
+          <div class="row-stretch overview-count-row">
+            <h2 class="overview-count">52</h2>
+            <div class="row">
+              <img src="images/icon-down.svg" alt="icon up" />
+              <span class="change change-down">2%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-overview">
+          <div class="row-stretch">
+            <span class="small-text">Likes</span>
+            <img src="images/icon-instagram.svg" alt="instagram icon" />
+          </div>
+          <div class="row-stretch overview-count-row">
+            <h2 class="overview-count">5462</h2>
+            <div class="row">
+              <img src="images/icon-up.svg" alt="icon up" />
+              <span class="change change-up">2257%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-overview">
+          <div class="row-stretch">
+            <span class="small-text">Profile Views</span>
+            <img src="images/icon-instagram.svg" alt="instagram icon" />
+          </div>
+          <div class="row-stretch overview-count-row">
+            <h2 class="overview-count">52k</h2>
+            <div class="row">
+              <img src="images/icon-up.svg" alt="icon up" />
+              <span class="change change-up">1375%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-overview">
+          <div class="row-stretch">
+            <span class="small-text">Retweets</span>
+            <img src="images/icon-twitter.svg" alt="twitter icon" />
+          </div>
+          <div class="row-stretch overview-count-row">
+            <h2 class="overview-count">117</h2>
+            <div class="row">
+              <img src="images/icon-up.svg" alt="icon up" />
+              <span class="change change-up">303%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-overview">
+          <div class="row-stretch">
+            <span class="small-text">Likes</span>
+            <img src="images/icon-twitter.svg" alt="twitter icon" />
+          </div>
+          <div class="row-stretch overview-count-row">
+            <h2 class="overview-count">507</h2>
+            <div class="row">
+              <img src="images/icon-up.svg" alt="icon up" />
+              <span class="change change-up">553%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-overview">
+          <div class="row-stretch">
+            <span class="small-text">Likes</span>
+            <img src="images/icon-youtube.svg" alt="youtube icon" />
+          </div>
+          <div class="row-stretch overview-count-row">
+            <h2 class="overview-count">107</h2>
+            <div class="row">
+              <img src="images/icon-down.svg" alt="icon up" />
+              <span class="change change-down">19%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-overview">
+          <div class="row-stretch">
+            <span class="small-text">Total Views</span>
+            <img src="images/icon-youtube.svg" alt="youtube icon" />
+          </div>
+          <div class="row-stretch overview-count-row">
+            <h2 class="overview-count">1407</h2>
+            <div class="row">
+              <img src="images/icon-down.svg" alt="icon up" />
+              <span class="change change-down">12%</span>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="card card-overview">
-        <div class="row-stretch">
-          <span class="small-text">Likes</span>
-          <img src="images/icon-instagram.svg" alt="instagram icon">
-        </div>
-        <div class="row-stretch overview-count-row">
-          <h2 class="overview-count">5462</h2>
-          <div class="row ">
-            <img src="images/icon-up.svg" alt="icon up">
-            <span class="change change-up">2257%</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="card card-overview">
-        <div class="row-stretch">
-          <span class="small-text">Profile Views</span>
-          <img src="images/icon-instagram.svg" alt="instagram icon">
-        </div>
-        <div class="row-stretch overview-count-row">
-          <h2 class="overview-count">52k</h2>
-          <div class="row ">
-            <img src="images/icon-up.svg" alt="icon up">
-            <span class="change change-up">1375%</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="card card-overview">
-        <div class="row-stretch">
-          <span class="small-text">Retweets</span>
-          <img src="images/icon-twitter.svg" alt="twitter icon">
-        </div>
-        <div class="row-stretch overview-count-row">
-          <h2 class="overview-count">117</h2>
-          <div class="row ">
-            <img src="images/icon-up.svg" alt="icon up">
-            <span class="change change-up">303%</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="card card-overview">
-        <div class="row-stretch">
-          <span class="small-text">Likes</span>
-          <img src="images/icon-twitter.svg" alt="twitter icon">
-        </div>
-        <div class="row-stretch overview-count-row">
-          <h2 class="overview-count">507</h2>
-          <div class="row ">
-            <img src="images/icon-up.svg" alt="icon up">
-            <span class="change change-up">553%</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="card card-overview">
-        <div class="row-stretch">
-          <span class="small-text">Likes</span>
-          <img src="images/icon-youtube.svg" alt="youtube icon">
-        </div>
-        <div class="row-stretch overview-count-row">
-          <h2 class="overview-count">107</h2>
-          <div class="row ">
-            <img src="images/icon-down.svg" alt="icon up">
-            <span class="change change-down">19%</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="card card-overview">
-        <div class="row-stretch">
-          <span class="small-text">Total Views</span>
-          <img src="images/icon-youtube.svg" alt="youtube icon">
-        </div>
-        <div class="row-stretch overview-count-row">
-          <h2 class="overview-count">1407</h2>
-          <div class="row ">
-            <img src="images/icon-down.svg" alt="icon up">
-            <span class="change change-down">12%</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
     </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
