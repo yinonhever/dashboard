@@ -311,3 +311,20 @@ body.light {
     padding: 6% 6% 3%;
   }
 }
+
+
+/* RESPONDING TO LINE BREAK ON SMALLER MOBILES */
+
+@media all and (max-width: 345px) {
+  .main-heading {
+    line-height: 1.2;
+  }
+
+  #header {
+    padding-bottom: 160px;
+  }
+
+  #grids-container {
+    margin-top: 250px;
+  }
+}
